@@ -6,7 +6,7 @@ router = Router(name="star")
 
 @router.message(Command("help"))
 async def cmd_help(message: Message):
-    await message.answer("Команды: /start, /help, /echo <текст>")
+    await message.answer("Команды: /start, /help, /echo")
 
 @router.message(Command("echo"))
 async def cmd_echo(message: Message):
